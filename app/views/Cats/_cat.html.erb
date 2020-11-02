@@ -1,0 +1,12 @@
+<% if action == 'show' %>
+<a href="<%=cat_url%>"> cats index link </a>
+<% else %>
+<a href="<%=cat_url(cat)%>"> cats show link </a>
+<%end%>
+<ul class='cat-attributes'>
+    <li> <%= cat.birthdate%></li>
+    <li> <%= cat.name%></li>
+    <li> <%= cat.description%></li>
+    <li> <%= cat.sex%></li>
+    <li> <%= cat.color%></li>
+</ul>
